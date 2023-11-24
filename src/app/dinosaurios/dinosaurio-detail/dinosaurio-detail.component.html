@@ -1,0 +1,34 @@
+<div class="card">
+  <div class="container-fluid">
+    <p class="h3 p-3">{{ dinosaurioDetail.name }}</p>
+    <div class="row">
+      <div class="col-2">
+        <div class="thumb">
+          <img
+            class="img-fluid"
+            src="{{ dinosaurioDetail.image }}"
+            alt="{{ dinosaurioDetail.name }}"
+          />
+        </div>
+      </div>
+      <div class="col">
+        <dl>
+          <dd> <p class="bold">Nombre cientifico</p>{{ dinosaurioDetail.name }}</dd>
+          <hr />
+          <dd> <p class="bold">Alimentación</p> {{ dinosaurioDetail.feeding }}</dd>
+          <hr />
+          <dd> <p class="bold">Era</p> {{ dinosaurioDetail.era }}</dd>
+          <hr />
+          <dd> <p class="bold">Pais de descubrimiento</p> {{ dinosaurioDetail.discoveryCountry }}</dd>
+          <hr />
+
+        </dl>
+
+
+      </div>
+      <dd> <p class="bold">Descripción</p> {{ dinosaurioDetail.description }}</dd>
+
+    </div>
+   </div>
+  </div>
+  

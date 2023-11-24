@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row1">
+    <div class="con">
+      <img
+      class="img"
+      src="https://raw.githubusercontent.com/2603-Uniandes/jsons/main/logo.webp"
+    />    
+    <p>Numero total de carnivoros: {{ getCarnivoros() }}</p>
+    <p>Numero total de herbivoros: {{ getHerbivoros() }}</p>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div *ngFor="let dinosaurio of dinosaurios" class="col mb-2">
+      <div class="card p-2" >
+        <div class="card-body">
+          
+          <td (click)="onSelected(dinosaurio)">
+            <img
+            class="card-img-top"
+            src="{{ dinosaurio.image }}"
+            alt="{{ dinosaurio.name }}"
+          />
+          <div></div>
+            {{ dinosaurio.scientificName }}
+            <h5 class="card-title">{{ dinosaurio.shortDescription }}
+            </h5>
+          </td>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="selected">
+  <app-dinosaurio-detail [dinosaurioDetail]="selectedDinosaurio"></app-dinosaurio-detail>
+</div>

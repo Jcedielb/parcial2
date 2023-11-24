@@ -1,0 +1,42 @@
+.td{
+  color: blue;
+}
+.card-body {
+  cursor: pointer;
+  height: auto;
+  text-align: justify;
+}
+
+.row1{
+  background-color: black;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  color: white;
+  align-self: center;
+}
+
+.img{
+height: 100px;
+margin: 10px;
+align-self: center;
+}
+
+.con{
+  align-items: center;
+  align-self: center;
+  align-content: center;
+
+}
+
+.container{
+margin-left: -10px;
+align-items: center;
+align-self: center;
+align-content: center;
+}
+
+.card-img-top{
+  height: 200px;
+  width: 250px;
+}
